@@ -24,6 +24,7 @@ function validar_tarjeta(){
       } else {
       alert("El número de tarjeta no es válido. Volver a Ingresar");
 }
+};
     
 
 console.log(validator);
