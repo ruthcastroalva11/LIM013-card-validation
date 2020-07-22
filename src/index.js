@@ -1,15 +1,28 @@
 import validator from './validator.js';
 
-//Funcionalidad para el llenado de datos
-function resumenDatos(){
+const validar=document.getElementById("validar");
+validar.onclick=validar_tarjeta;
 
-    let nombre = document.getElementById("owner");
-    let username=nombre.value;
+function validar_tarjeta(){
+    let cardNumberid=document.getElementById("cardNumberid").value;
+    let owner = document.getElementById("owner").value;
+    //let fecha = document.getElementById("").value;
+    let cvv = document.getElementById("cvv").value;
 
-    if (username==='' || cvv===''){
+    let result=validator.isValid(cardNumberid);
+    console.log(result);
+    let cover=validator.maskify(cardNumberid);
+    console.log(cover);
+
+    if (cardNumberid==='' || owner==='' || cvv===''){
         alert("Todos los campos son obligatorios");
         return false;
     }
-}
+
+    if (result==true){
+        alert("Tarjeta Válida");
+      } else {
+      alert("El número de tarjeta no es válido. Volver a Ingresar");
+    
 
 console.log(validator);
