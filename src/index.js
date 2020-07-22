@@ -23,6 +23,7 @@ function validar_tarjeta(){
         alert("Tarjeta Válida");
       } else {
       alert("El número de tarjeta no es válido. Volver a Ingresar");
+}
     
 
 console.log(validator);
