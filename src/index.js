@@ -19,8 +19,12 @@ function validar_tarjeta(){
         return false;
     }
 
+    let message=document.getElementById("mensaje");
+
+
     if (result==true){
-        alert("Tarjeta Válida");
+        message.innerHTML+= "<p>" + cover + "</p>";
+        message.innerHTML+= "<p>Tarjeta válida</p>";
       } else {
       alert("El número de tarjeta no es válido. Volver a Ingresar");
 }
