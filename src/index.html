@@ -6,12 +6,56 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h2 class="htext">¡Estás a un paso de realizar tu compra!</h2></strong>
+    <h1 class="htext">¡Estás a un paso de realizar tu compra!</h1></strong>
 
-    <p>Para continuar, por favor confirma tus datos:</p>
-    
-    <header></header>
-    <main></main>
+    <p>Para continuar, por favor ingresa tus datos:</p>
+
+    <div class="Formulario">
+        <h2 class="htext">CONFIRMAR TARJETA</h2>
+      <div class="pago">
+      <form>
+        <div class="form-groups">
+          <label for="cardNumber">Número de Tarjeta</label></br>
+          <input type="text" class="form-control" id="cardNumberid" placeholder="**** **** **** ****" maxlength="16" >
+        </div>
+        <div class="form-groups">
+          <label for="owner">Nombre del Titular de la Tarjeta</label></br>
+          <input type="text" class="form-control" id="owner" placeholder="Ingresar nombre completo">
+        </div>
+        <div class="form-groups">
+          <label>Fecha de Expiración</label></br>
+          <select>
+            <option value="01">Enero</option>
+            <option value="02">Febrero </option>
+            <option value="03">Marzo</option>
+            <option value="04">Abril</option>
+            <option value="05">Mayo</option>
+            <option value="06">Junio</option>
+            <option value="07">Julio</option>
+            <option value="08">Agosto</option>
+            <option value="09">Septiembre</option>
+            <option value="10">Octubre</option>
+            <option value="11">Noviembre</option>
+            <option value="12">Diciembre</option>
+          </select>
+          <select>
+            <option value="22"> 2022</option>
+            <option value="23"> 2023</option>
+            <option value="24"> 2024</option>
+            <option value="25"> 2025</option>
+            <option value="26"> 2026</option>
+            <option value="27"> 2027</option>
+          </select>
+        </div>
+        <div class="form-groups">
+          <label for="cvv">CVV</label></br>
+          <input type="text" class="form-control" id="cvv" placeholder="123" maxlength="5">
+        </div>
+          <button type="submit" class="boton" id="validar">VALIDAR</button>
+        </div>
+      </form>
+      </div>
+    </div>      
     <footer></footer>
     <script src="index.js" type="module"></script>
   </body>
