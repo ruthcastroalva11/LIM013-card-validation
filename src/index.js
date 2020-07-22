@@ -23,8 +23,10 @@ function validar_tarjeta(){
 
 
     if (result==true){
-        message.innerHTML+= "<p>" + cover + "</p>";
-        message.innerHTML+= "<p>Tarjeta válida</p>";
+        //message.innerHTML= "<p>" + cover + "</p>";
+        //message.innerHTML= "<p>Tarjeta válida</p>";
+        message.innerHTML= "Tarjeta ingresada: " + cover ;
+        //document.getElementById('cardNumberid').style.display='none';
       } else {
       alert("El número de tarjeta no es válido. Volver a Ingresar");
 }
