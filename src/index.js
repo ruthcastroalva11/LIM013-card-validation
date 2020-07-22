@@ -15,22 +15,20 @@ function validar_tarjeta(){
     console.log(cover);
 
     if (cardNumberid==='' || owner==='' || cvv===''){
-        alert("Todos los campos son obligatorios");
+        alert("Completar todos los campos");
         return false;
     }
 
     let message=document.getElementById("mensaje");
 
-
     if (result==true){
-        //message.innerHTML= "<p>" + cover + "</p>";
-        //message.innerHTML= "<p>Tarjeta válida</p>";
-        message.innerHTML= "Tarjeta ingresada: " + cover ;
-        //document.getElementById('cardNumberid').style.display='none';
+        message.innerHTML= "<p>" + cover + "</p>";
+        message.innerHTML= "<p>Tarjeta válida</p>";
+        document.getElementById('formulario_total').style.display='none';
+        document.getElementById('mensaje').style.display='block';
       } else {
       alert("El número de tarjeta no es válido. Volver a Ingresar");
 }
-};
-    
+}   
 
 console.log(validator);
