@@ -20,14 +20,15 @@ function validar_tarjeta(){
     }
 
     let message=document.getElementById("mensaje");
-    let message2=document.getElementById("ownername");
+    //let owner = document.getElementById("ownername").value;
+    let message2=document.getElementById("mensaje2");
     let message3=document.getElementById("exito");
     //let owner = document.getElementById("owner").value;
 
     if (result==true){
         message.innerHTML= "Número de Tarjeta:  " + cover;
-        message2.innerHTML= "Nombre del Titular: " + owner;
-        message3.innerHTML= "¡Muchas Gracias! "+ "Tu compra ha sido realizada con éxito";
+        message2.innerHTML= "Nombre del Titular:  " + owner;
+        message3.innerHTML= "¡Muchas Gracias! " + "Tu compra ha sido realizada con éxito.";
         //message.innerHTML= "<p>Tarjeta válida</p>";
         //document.getElementById('formulario_total').style.display='none';
         document.getElementById('principal').style.display='none';
