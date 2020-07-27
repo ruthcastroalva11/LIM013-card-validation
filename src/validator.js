@@ -36,7 +36,7 @@ const validator = {
           result += creditCardNumber[i];
         }
         else {
-          result += "*";
+          result += "#";
         }
       }
     }

@@ -16,14 +16,14 @@ function validar_tarjeta(){
 
     if (cardNumberid==='' || owner==='' || cvv===''){
         alert("Completar todos los campos");
-        return false;
+        return;
     }
 
     let message=document.getElementById("mensaje");
 
     if (result==true){
         message.innerHTML= "<p>" + cover + "</p>";
-        message.innerHTML= "<p>Tarjeta válida</p>";
+        //message.innerHTML= "<p>Tarjeta válida</p>";
         document.getElementById('formulario_total').style.display='none';
         document.getElementById('mensaje').style.display='block';
       } else {
