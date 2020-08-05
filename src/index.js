@@ -10,11 +10,11 @@ function validar_tarjeta(){
     let cvv = document.getElementById("cvv").value;
 
     let result=validator.isValid(cardNumberid);
-    console.log(result);
-    let cover=validator.maskify(cardNumberid);
-    console.log(cover);
+    //console.log(result);
+    let cover=validator.maskify(cardNumberid); // carNumberid === '78965432'
+    //console.log(cover);
 
-    if (cardNumberid==='' || ownername==='' || cvv===''){
+    if (cardNumberid==='' || owner==='' || cvv===''){
         alert("Completar todos los campos");
         return;
     }
@@ -41,4 +41,4 @@ function validar_tarjeta(){
 }
 }   
 
-console.log(validator);
+//console.log(validator);

@@ -23,7 +23,7 @@ describe('validator', () => {
 
     it('debería retornar false para "1234567890"', () => {
       
-      expect(validator.isValid("1234567890")).toBe(true);
+      expect(validator.isValid("1234567890")).toBe(false);
     });
   });
 
@@ -33,15 +33,15 @@ describe('validator', () => {
     });
 
     it('Debería retornar "############5616" para "4556364607935616"', () => {
-      expect(typeof validator.maskify).toBe('function');
+      expect(validator.maskify("4556364607935616")).toBe("############5616");
     });
 
     it('Debería retornar "1" para "1"', () => {
-      expect(typeof validator.maskify).toBe(1);
+      expect(validator.maskify("1")).toBe("1");
     });
 
     it('Debería retornar "######orld" para "helloworld"', () => {
-      expect(typeof validator.maskify).toBe('function');
+      expect(validator.maskify("helloworld")).toBe("######orld");
     });
   })
 })
